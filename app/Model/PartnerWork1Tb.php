@@ -1,7 +1,7 @@
 <?php
 APP ::uses('AppModel', 'Model');
 
-class UserTb extends AppModel {
+class PartnerWork1Tb extends AppModel {
 	public  $belongsTo = 'UserTb';
 	public  $hasMany = 'PartnerWork2Tb';
 }

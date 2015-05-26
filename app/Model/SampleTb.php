@@ -4,9 +4,5 @@
 
 	class SampleTb extends AppModel {
 		public  $hasOne = 'SampleParamTb';
-
-
 	}
-
-
 ?>

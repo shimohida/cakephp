@@ -1,0 +1,924 @@
+2015-05-20 17:22:14 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-20 17:53:34 Error: Fatal Error (64): Cannot redeclare class Sample in [C:\xampp\htdocs\cakephp\app\Model\SampleTb.php, line 9]
+2015-05-20 17:53:34 Error: [FatalErrorException] Cannot redeclare class Sample
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-20 17:53:57 Error: Fatal Error (64): Cannot redeclare class Sample in [C:\xampp\htdocs\cakephp\app\Model\SampleTb.php, line 9]
+2015-05-20 17:53:57 Error: [FatalErrorException] Cannot redeclare class Sample
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-20 17:54:55 Error: Fatal Error (1): Call to undefined function vardump() in [C:\xampp\htdocs\cakephp\app\View\Test\index.ctp, line 1]
+2015-05-20 17:54:55 Error: [FatalErrorException] Call to undefined function vardump()
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 1)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 1, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 1, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-20 17:55:51 Error: Fatal Error (4): syntax error, unexpected ';' in [C:\xampp\htdocs\cakephp\app\View\Test\index.ctp, line 1]
+2015-05-20 17:55:51 Error: [FatalErrorException] syntax error, unexpected ';'
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 1)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 1, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 1, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-20 18:27:02 Error: Fatal Error (1): Call to a member function fetch() on null in [C:\xampp\htdocs\cakephp\app\View\Test\index.ctp, line 16]
+2015-05-20 18:27:02 Error: [FatalErrorException] Call to a member function fetch() on null
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 16)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 16, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 16, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-20 18:29:45 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\cakephp\app\View\Test\index.ctp, line 17]
+2015-05-20 18:29:45 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-20 18:30:08 Error: Fatal Error (4): syntax error, unexpected '<' in [C:\xampp\htdocs\cakephp\app\View\Test\index.ctp, line 17]
+2015-05-20 18:30:08 Error: [FatalErrorException] syntax error, unexpected '<'
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 17, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-20 18:30:20 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\cakephp\app\View\Test\index.ctp, line 26]
+2015-05-20 18:30:20 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 26, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 13:37:40 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 65]
+2015-05-21 13:37:40 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 13:37:45 Error: Fatal Error (4): syntax error, unexpected '}' in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 65]
+2015-05-21 13:37:45 Error: [FatalErrorException] syntax error, unexpected '}'
+Request URL: /cakephp/test/index
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 65, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 13:38:45 Error: Fatal Error (1): Call to a member function findById() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 23]
+2015-05-21 13:38:45 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /cakephp/test/index
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 14:03:59 Error: [MissingActionException] Action TestController::show_regist() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestController',
+  'action' => 'show_regist',
+)
+Request URL: /cakephp/test/show_regist
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-21 14:05:25 Error: [MissingActionException] Action TestController::show_regist() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestController',
+  'action' => 'show_regist',
+)
+Request URL: /cakephp/test/show_regist
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-21 14:50:36 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\xampp\htdocs\cakephp\app\View\Test\show_regist_view.ctp, line 7]
+2015-05-21 14:50:36 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /cakephp/test/show_regist_view?user_id=3
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 14:50:53 Error: Fatal Error (4): syntax error, unexpected '{' in [C:\xampp\htdocs\cakephp\app\View\Test\show_regist_view.ctp, line 7]
+2015-05-21 14:50:53 Error: [FatalErrorException] syntax error, unexpected '{'
+Request URL: /cakephp/test/show_regist_view?id=3
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 14:51:56 Error: Fatal Error (4): syntax error, unexpected end of file in [C:\xampp\htdocs\cakephp\app\View\Test\show_regist_view.ctp, line 23]
+2015-05-21 14:51:56 Error: [FatalErrorException] syntax error, unexpected end of file
+Request URL: /cakephp/test/show_regist_view?id=3
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 23)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 23, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', 'C:\\xampp\\htdocs...', 23, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 15:01:52 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1' at line 1
+Request URL: /cakephp/test/show_regist_view?id=1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(89): Model->find('all', Array)
+#7 [internal function]: TestController->show_regist_view()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 15:02:18 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1' at line 1
+Request URL: /cakephp/test/show_regist_view?id=1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(89): Model->find('all', Array)
+#7 [internal function]: TestController->show_regist_view()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 15:04:27 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1' at line 1
+Request URL: /cakephp/test/show_regist_view?id=1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(89): Model->find('all', Array)
+#7 [internal function]: TestController->show_regist_view()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 15:18:38 Error: Fatal Error (1): Call to a member function fetch() on array in [C:\xampp\htdocs\cakephp\app\View\Test\show_regist_view.ctp, line 3]
+2015-05-21 15:18:38 Error: [FatalErrorException] Call to a member function fetch() on array
+Request URL: /cakephp/test/show_regist_view?id=1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 15:19:12 Error: Fatal Error (1): Call to a member function fetch() on array in [C:\xampp\htdocs\cakephp\app\View\Test\show_regist_view.ctp, line 3]
+2015-05-21 15:19:12 Error: [FatalErrorException] Call to a member function fetch() on array
+Request URL: /cakephp/test/show_regist_view?id=1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 3)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 3, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 3, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 15:29:24 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 1' at line 1
+Request URL: /cakephp/test/show_regist_view?id=1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(87): Model->find('all', Array)
+#7 [internal function]: TestController->show_regist_view()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 15:31:58 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '== 'test'' at line 1
+Request URL: /cakephp/test/index
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(41): Model->find('all', Array)
+#7 [internal function]: TestController->index()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 15:32:13 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=== 'test'' at line 1
+Request URL: /cakephp/test/index
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(41): Model->find('all', Array)
+#7 [internal function]: TestController->index()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 16:13:32 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'name' cannot be null
+Request URL: /cakephp/test/run_regist
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('INSERT INTO `ca...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1012): DboSource->execute('INSERT INTO `ca...')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1928): DboSource->create(Object(SampleTb), Array, Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1751): Model->_doSave(Array, Array)
+#5 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(108): Model->save(Array)
+#6 [internal function]: TestController->run_regist()
+#7 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2015-05-21 16:24:11 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 124]
+2015-05-21 16:24:11 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_db
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:24:31 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 124]
+2015-05-21 16:24:31 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_db
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:25:13 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 126]
+2015-05-21 16:25:13 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_db
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:26:47 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 126]
+2015-05-21 16:26:47 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_db
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:32:18 Error: [MissingActionException] Action TestController::delete_id() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestController',
+  'action' => 'delete_id',
+)
+Request URL: /cakephp/test/delete_id
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-21 16:33:27 Error: [MissingActionException] Action TestController::delete_id() could not be found.
+Exception Attributes: array (
+  'controller' => 'TestController',
+  'action' => 'delete_id',
+)
+Request URL: /cakephp/test/delete_id
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#2 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-05-21 16:34:00 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 126]
+2015-05-21 16:34:00 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_ib
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 126, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:35:06 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 124]
+2015-05-21 16:35:06 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_ib
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:35:10 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 124]
+2015-05-21 16:35:10 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_ib
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:35:23 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 124]
+2015-05-21 16:35:23 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_ib
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 124, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:38:16 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:38:16 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:40:07 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:40:07 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:40:31 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:40:31 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:43:45 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:43:45 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:44:55 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:44:55 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:46:04 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:46:04 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/index
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:46:21 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 125]
+2015-05-21 16:46:21 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/delete_ib
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 125)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 125, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 125, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:55:30 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:55:31 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:56:40 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:56:40 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:57:16 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:57:16 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 16:58:01 Error: Fatal Error (1): Call to a member function delete() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 68]
+2015-05-21 16:58:01 Error: [FatalErrorException] Call to a member function delete() on null
+Request URL: /cakephp/test/
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 68, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 17:04:14 Error: Fatal Error (1): Call to a member function findById() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 116]
+2015-05-21 17:04:14 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /cakephp/test/run_regist
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 116)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 116, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 116, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 17:29:28 Error: Fatal Error (1): Call to a member function findById() on null in [C:\xampp\htdocs\cakephp\app\Controller\TestController.php, line 100]
+2015-05-21 17:29:28 Error: [FatalErrorException] Call to a member function findById() on null
+Request URL: /cakephp/test/show_regist_view?id=2
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 100)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 100, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 100, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-21 18:07:44 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SampleTb.creayed' in 'order clause'
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(83): Model->find('all', Array)
+#7 [internal function]: TestController->index()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 18:08:00 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'SampleTb.created' in 'order clause'
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(460): PDOStatement->execute(Array)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(426): DboSource->_execute('SELECT `SampleT...', Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(668): DboSource->execute('SELECT `SampleT...', Array, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1106): DboSource->fetchAll('SELECT `SampleT...', false)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#6 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(83): Model->find('all', Array)
+#7 [internal function]: TestController->index()
+#8 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2015-05-21 18:50:28 Error: [MissingTableException] Table sample_pram_tbs for model SamplePramTb was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'sample_pram_tbs',
+  'class' => 'SamplePramTb',
+  'ds' => 'default',
+)
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3644): Model->setSource('sample_pram_tbs')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(2516): Model->schema()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1741): DboSource->fields(Object(AppModel), 'SamplePramTb', '')
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(SampleTb), Object(AppModel), 'hasOne', 'SamplePramTb', Array, Array, false)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#6 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(79): Model->find('all')
+#8 [internal function]: TestController->index()
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#12 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-05-21 18:52:56 Error: [MissingTableException] Table sample_pram_tbs for model SamplePramTb was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'sample_pram_tbs',
+  'class' => 'SamplePramTb',
+  'ds' => 'default',
+)
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3644): Model->setSource('sample_pram_tbs')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(2516): Model->schema()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1741): DboSource->fields(Object(AppModel), 'SamplePramTb', '')
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(SampleTb), Object(AppModel), 'hasOne', 'SamplePramTb', Array, Array, false)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#6 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(79): Model->find('all')
+#8 [internal function]: TestController->index()
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#12 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-05-21 18:53:52 Error: [MissingTableException] Table sample_pram_tbs for model SamplePramTb was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'sample_pram_tbs',
+  'class' => 'SamplePramTb',
+  'ds' => 'default',
+)
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3644): Model->setSource('sample_pram_tbs')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(2516): Model->schema()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1741): DboSource->fields(Object(AppModel), 'SamplePramTb', '')
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(SampleTb), Object(AppModel), 'hasOne', 'SamplePramTb', Array, Array, false)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#6 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(79): Model->find('all')
+#8 [internal function]: TestController->index()
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#12 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-05-21 18:54:44 Error: [MissingTableException] Table sample_pram_tbs for model SamplePramTb was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'sample_pram_tbs',
+  'class' => 'SamplePramTb',
+  'ds' => 'default',
+)
+Request URL: /cakephp/test
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3644): Model->setSource('sample_pram_tbs')
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(1387): Model->getDataSource()
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(2516): Model->schema()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1741): DboSource->fields(Object(AppModel), 'SamplePramTb', '')
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Model\Datasource\DboSource.php(1093): DboSource->generateAssociationQuery(Object(SampleTb), Object(AppModel), 'hasOne', 'SamplePramTb', Array, Array, false)
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(3022): DboSource->read(Object(SampleTb), Array)
+#6 C:\xampp\htdocs\cakephp\lib\Cake\Model\Model.php(2994): Model->_readDataSource('all', Array)
+#7 C:\xampp\htdocs\cakephp\app\Controller\TestController.php(79): Model->find('all')
+#8 [internal function]: TestController->index()
+#9 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(TestController), Array)
+#10 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#11 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(TestController), Object(CakeRequest))
+#12 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2015-05-22 17:25:33 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-22 17:27:06 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-22 17:27:10 Error: [MissingControllerException] Controller class BlogController could not be found.
+Exception Attributes: array (
+  'class' => 'BlogController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/blog/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-22 17:27:53 Error: [MissingControllerException] Controller class TestsController could not be found.
+Exception Attributes: array (
+  'class' => 'TestsController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/tests
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-22 17:49:39 Error: [MissingControllerException] Controller class PostController could not be found.
+Exception Attributes: array (
+  'class' => 'PostController',
+  'plugin' => NULL,
+)
+Request URL: /cakephp/post
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-05-22 18:13:16 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 8]
+2015-05-22 18:13:16 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:13:26 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 8]
+2015-05-22 18:13:26 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:14:28 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 8]
+2015-05-22 18:14:28 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 8, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:17:01 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 9]
+2015-05-22 18:17:01 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 9)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 9, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 9, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:19:18 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 10]
+2015-05-22 18:19:18 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:19:49 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 10]
+2015-05-22 18:19:49 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:20:28 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 10]
+2015-05-22 18:20:28 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 10, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:20:58 Error: Fatal Error (64): Cannot redeclare PostsController::$uses in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 7]
+2015-05-22 18:20:58 Error: [FatalErrorException] Cannot redeclare PostsController::$uses
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 7)
+#1 [internal function]: ErrorHandler::handleError(64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 7, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 64, 'Cannot redeclar...', 'C:\\xampp\\htdocs...', 7, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:21:09 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 11]
+2015-05-22 18:21:09 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-22 18:21:19 Error: Fatal Error (1): Call to a member function find() on null in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 11]
+2015-05-22 18:21:19 Error: [FatalErrorException] Call to a member function find() on null
+Request URL: /cakephp/posts
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 11)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 11, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', 'C:\\xampp\\htdocs...', 11, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-25 15:15:41 Error: Fatal Error (1): Call to undefined method PostsController::redirectt() in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 32]
+2015-05-25 15:15:41 Error: [FatalErrorException] Call to undefined method PostsController::redirectt()
+Request URL: /cakephp/posts/add/contloller:post
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 32, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 32, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-25 15:17:51 Error: Fatal Error (1): Call to undefined method PostsController::redirectt() in [C:\xampp\htdocs\cakephp\app\Controller\PostsController.php, line 32]
+2015-05-25 15:17:51 Error: [FatalErrorException] Call to undefined method PostsController::redirectt()
+Request URL: /cakephp/posts/add/contloller:post
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\Error\ErrorHandler.php(213): ErrorHandler::handleFatalError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 32, Array)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(933): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', 'C:\\xampp\\htdocs...', 32, Array)
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Core\App.php(906): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-05-25 18:23:34 Error: [CakeException] Method delete does not exist
+Request URL: /cakephp/posts/delete/8
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(63): CakeRequest->__call('delete', Array)
+#1 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(63): CakeRequest->delete('get')
+#2 [internal function]: PostsController->delete('8')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-05-25 18:23:48 Error: [CakeException] Method delete does not exist
+Request URL: /cakephp/posts/delete/8
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(63): CakeRequest->__call('delete', Array)
+#1 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(63): CakeRequest->delete('get')
+#2 [internal function]: PostsController->delete('8')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-05-25 18:30:30 Error: [CakeException] Method delete does not exist
+Request URL: /cakephp/posts/delete/5
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(63): CakeRequest->__call('delete', Array)
+#1 C:\xampp\htdocs\cakephp\app\Controller\PostsController.php(63): CakeRequest->delete('id')
+#2 [internal function]: PostsController->delete('5')
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(PostsController), Array)
+#4 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#5 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#6 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#7 {main}
+2015-05-25 18:31:15 Error: [MissingViewException] View file "Posts\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete.ctp',
+)
+Request URL: /cakephp/posts/delete/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-25 18:33:13 Error: [MissingViewException] View file "Posts\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete.ctp',
+)
+Request URL: /cakephp/posts/delete/6
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-25 18:43:12 Error: [MissingViewException] View file "Posts\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete.ctp',
+)
+Request URL: /cakephp/posts/delete/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-25 18:43:33 Error: [MissingViewException] View file "Posts\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete.ctp',
+)
+Request URL: /cakephp/posts/delete/8
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-25 18:45:48 Error: [MissingViewException] View file "Posts\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete.ctp',
+)
+Request URL: /cakephp/posts/delete/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2015-05-26 10:02:47 Error: [MissingViewException] View file "Posts\delete.ctp" is missing.
+Exception Attributes: array (
+  'file' => 'Posts\\delete.ctp',
+)
+Request URL: /cakephp/posts/delete/1
+Stack Trace:
+#0 C:\xampp\htdocs\cakephp\lib\Cake\View\View.php(470): View->_getViewFileName(NULL)
+#1 C:\xampp\htdocs\cakephp\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#2 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#3 C:\xampp\htdocs\cakephp\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(PostsController), Object(CakeRequest))
+#4 C:\xampp\htdocs\cakephp\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}

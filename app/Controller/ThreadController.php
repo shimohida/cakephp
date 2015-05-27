@@ -15,10 +15,14 @@ class ThreadController extends AppController {
 
 	public function run_regist(){
 		// INSERT
-		$this->PartnerWork1Tb->create();
-		$this->PartnerWork1Tb->save(array('user_tb_id' => 6,'thread' => $this->request->data['title'], 'detail' => $this->request->data['detail']));
+		if($this->request->data['title'] != '' && $this->request->data['detail'] != ''){
+			$this->PartnerWork1Tb->create();
+			$this->PartnerWork1Tb->save(array('user_tb_id' => 6,'thread' => $this->request->data['title'], 'detail' => $this->request->data['detail']));
+		}
+		else
+			echo '空白が入っていたのでスレッド作成ができませんでした。';
 
-		$this->redirect("http://localhost/kensyu/cakephp/thread/thread1");
+		$this->redirect("/thread/thread1");
 	}
 
 	public function delete_user(){
@@ -26,7 +30,7 @@ class ThreadController extends AppController {
 		if(isset($this->request->data['id'])){
 			$this->PartnerWork1Tb->delete($this->request->data['id']);
 		}
-		$this->redirect("http://localhost/kensyu/cakephp/thread/thread1");
+		$this->redirect("/thread/thread1");
 	}
 }
 ?>

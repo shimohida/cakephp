@@ -18,11 +18,11 @@
 	<?php foreach ($db_data as $key => $value):  ?>
 		<tr>
 			<td><?php echo date('Y-m-d H:i:s', $value['PartnerWork1Tb']['created']); ?></td>
-			<td><a href="kensyu/cakephp/thread/thread2?id=<?php echo $value['PartnerWork1Tb']['id']; ?>">
+			<td><a href="/kensyu/cakephp/less/less1?thread_id=<?php echo $value['PartnerWork1Tb']['id']; ?>">
 					<?php echo $value['PartnerWork1Tb']['thread']; ?></a></td>
 			<td><?php echo $value['UserTb']['name']; ?></td>
 			<td>
-				<form action="http://localhost/kensyu/cakephp/thread/delete_user" method="POST">
+				<form action="/kensyu/cakephp/thread/delete_user" method="POST">
 					<input type="hidden" name="id" value="<?php echo $value['PartnerWork1Tb']['id']; ?>">
 					<input type="submit" value="削除">
 				</form>

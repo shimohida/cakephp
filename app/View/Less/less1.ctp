@@ -20,7 +20,7 @@
 		<div style="float: left;"><?php echo date("Y-m-d H:i:s" , $risult2['PartnerWork2Tb']['created'] );?> : <?php echo $risult2['UserTb']['name']; ?> </div>
 
 		 <div style="float: right;">
-		 	<form action="/cakephp/less/delete_less?thread_id=<?php  echo $thread_id; ?>&user_id=<?php echo $user_id; ?>" method="POST">
+		 	<form action="/kensyu/cakephp/less/delete_less?thread_id=<?php  echo $thread_id; ?>&user_id=<?php echo $user_id; ?>" method="POST">
 					<input type="hidden" name="delete_less" value="<?php echo  $risult2['PartnerWork2Tb']['id']; ?>">
 					<input type="submit" value="削除">
 			</form>
@@ -33,6 +33,6 @@
 <br>
 <?php  }  ?>
 
-<button onclick="location.href='/cakephp/thread/thread1'">スレッド一覧</button>
+<button onclick="location.href='/kensyu/cakephp/thread/thread1'">スレッド一覧</button>
 
 

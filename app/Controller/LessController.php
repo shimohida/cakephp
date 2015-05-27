@@ -16,26 +16,16 @@
 			$req = $this->request->data;   //post
 			$req1 = $this->request->query; //get
 
-			//INSERT
-			if(isset($req1['less'])){
-				$this->PartnerWork2Tb->create();
-				$this->PartnerWork2Tb->save(array('user_tb_id' => $req1['user_id'] , 'partner_work1_tb_id' => $req1['thread_id'] ,'less' => $req1['less'] , 'created' => $req1['created'], 'updated' => $req1['created']));
-			}
-
-
-
 			//post されたデータをview で使えるように変数に set する
 			$this->set('user_id', 2);     //$req[""]
 			$this->set('thread_id', $req1['thread_id']);   //$req[""]
 
-			//test
-			//今回 PartnerWork1Tb に検索をかけてみる
-			//なお、スレッド一覧からpost された ID をもとに検索をかけるが、今回は仮に「１」を入れておく
 
+			//今回 PartnerWork1Tb に検索をかけてみる
+			//なお、スレッド一覧から 送られた ID をもとに検索をかける
 			//id しか検索しないから findById を使う
 			$where = $this->PartnerWork1Tb->findById($req1['thread_id']);
 			$this->set('db_data', $where);
-
 
 
 			//order を使用した並べ替え
@@ -52,6 +42,20 @@
 
 		public function less2(){
 
+			$req1 = $this->request->query; //get
+
+			$this->set('user_id', $req1['user_id']);
+			$this->set('thread_id',  $req1['thread_id']);
+
+			//INSERT
+			if(isset($req1['less']) && $req1['less'] != ""){
+				$this->PartnerWork2Tb->create();
+				$this->PartnerWork2Tb->save(array('user_tb_id' => $req1['user_id'] , 'partner_work1_tb_id' => $req1['thread_id'] ,'less' => $req1['less'] , 'created' => time(), 'updated' => time()));
+
+				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id']) ));
+			}
+
+
 
 		}//less2 終了
 
@@ -59,17 +63,17 @@
 		//レスの削除関係
 		public function delete_less(){
 
-			//削除
-			if(count($this->request->data) != 0 ){
-				$req = $this->request->data;   //post
+			$req = $this->request->data;   //post
+			$req1 = $this->request->query; //get
 
-				//DELETE
+			//DELETE
+			if(isset($req['delete_less'])){
 				$this->PartnerWork2Tb->delete($req['delete_less']);  // （）の中にはＩＤを入れる
+
+				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id']) ));
 			}
 
-			$this->redirect(array('controller' =>'less','action'=>'less1'));
-
-		}
+		}//レスの削除関係 終了
 
 
 

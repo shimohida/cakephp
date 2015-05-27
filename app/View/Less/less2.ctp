@@ -3,11 +3,10 @@
 
 
 レス内容<br>
-<form action="/cakephp/less/less1" method="get">
+<form action="#" method="GET">
 
-<input type="hidden" name="user_id" value=" <?php if(isset($_POST['user_id'])){ echo $_POST['user_id']; } ?> ">
-<input type="hidden" name="thread_id" value=" <?php if(isset($_POST['thread_id'])){ echo $_POST['thread_id']; } ?> ">
-<input type="hidden" name="created" value="<?php echo time(); ?>">
+<input type="hidden" name="user_id" value="<?php if(isset($user_id)){ echo $user_id; } ?>">
+<input type="hidden" name="thread_id" value="<?php if(isset($thread_id)){ echo $thread_id; } ?>">
 
 <textarea name="less" ></textarea>
 

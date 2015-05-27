@@ -2,7 +2,7 @@
 <pre><?php //var_dump($db_data);?> </pre>
 
 
-    日付：<?php echo $db_data['PartnerWork1Tb']['created'];   ?><br><br>
+    日付：<?php echo  date("Y-m-d H:i:s" ,$db_data['PartnerWork1Tb']['created']);   ?><br><br>
 
 タイトル：<?php echo $db_data['PartnerWork1Tb']['thread'];  ?><br><br>
 

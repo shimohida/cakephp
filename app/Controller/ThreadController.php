@@ -8,6 +8,7 @@ class ThreadController extends AppController {
 		// データベース
 		$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));
 		$this->set('db_data', $datas);
+		$this->set('msg', '空白が入っていたのでスレッド作成ができませんでした。');
 	}
 
 	public function thread2() {
@@ -19,8 +20,9 @@ class ThreadController extends AppController {
 			$this->PartnerWork1Tb->create();
 			$this->PartnerWork1Tb->save(array('user_tb_id' => 6,'thread' => $this->request->data['title'], 'detail' => $this->request->data['detail']));
 		}
-		else
-			echo '空白が入っていたのでスレッド作成ができませんでした。';
+// 		else
+// 			echo '空白が入っていたのでスレッド作成ができませんでした。';
+// 		exit;
 
 		$this->redirect("/thread/thread1");
 	}

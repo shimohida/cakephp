@@ -7,21 +7,21 @@ class LoginController extends AppController {
     public function login(){
     	session_start();
 
-    	if(!isset($_GET['mode']) && isset($_SESSION['is_login']) && $_SESSION['is_login'] === 1){
-    		header("Location: ./index2.php");
+    	if(isset($_SESSION['login_id']) && $_SESSION['login_id'] === 1){
+    		$this->redirect(array('controller' =>'thread','action'=>'thread1'));
     	}
 
     	if(isset($_GET['mode']) && $_GET['mode'] == 'logout'){
-    		unset($_SESSION['is_login']);
+    		unset($_SESSION['login_id']);
     	}
 
-//     	// post
+    	// post
     	$login = $this->request->data;
 
 //     	if(isset($login['name'])){
-//     	echo '<pre>';
-//     	var_dump($login['name']);
-//     	echo '</pre>';
+// 	    	echo '<pre>';
+// 	    	echo $this->Session->id();
+// 	    	echo '</pre>';
 //     	}
 
     	if(isset($login['name']) && isset($login['pass'])){
@@ -30,17 +30,9 @@ class LoginController extends AppController {
     		$datas =$this->UserTb->find('all', $where);
 
 			if(count($datas) > 0){
+				$_SESSION['login_id'] = 1;
     			$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $login['name'])));
 			}
-
-//     		//結果により分岐させる
-//     		if(count($datas) != 1){
-//     			$this->redirect(array('controller' =>'less','action'=>'index', '?' => array('mode' => 2) ));
-//     		}else{
-//     			//スレッド表示のための、データベース検索
-//     			$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));
-//     			$this->set('db_data', $datas);
-// 	    	}
     	}
     }
 }

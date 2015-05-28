@@ -4,11 +4,45 @@ App::uses('AppController', 'Controller');
 class ThreadController extends AppController {
 	public $uses = array('UserTb','PartnerWork1Tb');
 
-	public function thread1() {
-		// データベース
-		$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));
-		$this->set('db_data', $datas);
+	public function index(){
+
 	}
+
+
+	public function thread1() {
+
+		//ログイン関係
+		$req = $this->request->data;   //post
+
+		if(isset($req)){
+
+			if($req['name'] != "" && $req['pass'] != ""){
+
+				//送られてきた値で検索をかける
+				$where = array('conditions' => array('UserTb.name =' => $req['name'] , 'UserTb.pass =' => $req['pass']));
+				$datas =$this->UserTb->find('all' , $where);
+				$this->set('login_data', $datas);
+				var_dump($datas);
+
+				//結果により分岐させる
+				if(count($datas) != 1){
+					$this->redirect(array('controller' =>'less','action'=>'index', '?' => array('mode' => 2) ));
+				}else{
+					// スレッド表示のための、データベース検索
+					$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));
+					$this->set('db_data', $datas);
+				}
+
+			}else {
+				$this->redirect(array('controller' =>'less','action'=>'index', '?' => array('mode' => 1) ));
+			}
+
+		}else{
+			$this->redirect(array('controller' =>'less','action'=>'index', '?' => array('mode' => 1) ));
+		}
+
+
+	}//thread1 終了
 
 	public function thread2() {
 	}

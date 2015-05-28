@@ -51,19 +51,19 @@ class ThreadController extends AppController {
         		if($req['user_id'] != $thread[0]['PartnerWork1Tb']['user_tb_id']){
 
         			//スレッドのIDとuser が不一致
-        			$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('delete' => 2) ));
+        			$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req['user_id'] ,'delete' => 2) ));
         		}else{
         			// スレッドの削除を行う
         			$this->PartnerWork1Tb->delete($req['delete_id']);
-        			$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('delete' => 3) ));
+        			$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req['user_id'] ,'delete' => 3) ));
         		}
 
         	}else {
-        		$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('delete' => 1) ));
+        		$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req['user_id'] ,'delete' => 1) ));
         	}
 
         }else{
-        	$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('delete' => 1) ));
+        	$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req['user_id'] ,'delete' => 1) ));
         }
     } //delete_user 終了
 

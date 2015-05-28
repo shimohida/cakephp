@@ -17,10 +17,10 @@
 			$req1 = $this->request->query; //get
 
 			//送られたデータをview で使えるように変数に set する
-			$this->set('user_id', 1);
+			$this->set('user_id', $req1['user_id']);
 			$this->set('thread_id', $req1['thread_id']);
 
-			$this->set('get_data', $req1);
+			$this->set('get_data2', $req1);
 
 
 			//今回 PartnerWork1Tb に検索をかけてみる

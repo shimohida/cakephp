@@ -8,7 +8,7 @@ class ThreadController extends AppController {
     public function thread1() {
 
     	$req1 = $this->request->query; //get
-    	$this->set('delete', $req1);
+    	$this->set('get_data', $req1);
 
     	// スレッド表示のための、データベース検索
     	$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));

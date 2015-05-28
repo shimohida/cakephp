@@ -1,14 +1,14 @@
 
-<?php if(isset($delete['delete'])){
-		if ($delete['delete'] == 1){ ?>
+<?php if(isset($get_data['delete'])){
+		if ($get_data['delete'] == 1){ ?>
 
 		<h2>エラーが発生しました</h2>
 
-	<?php	}else if($delete['delete'] == 2){ ?>
+	<?php	}else if($get_data['delete'] == 2){ ?>
 
 		<h2>「UserID」が違うため削除できません！</h2>
 
-	<?php	}else if($delete['delete'] == 3){ ?>
+	<?php	}else if($get_data['delete'] == 3){ ?>
 
 		<h2>スレッドは削除されました</h2>
 
@@ -33,13 +33,13 @@
 	<?php foreach ($db_data as $key => $value):  ?>
 		<tr>
 			<td><?php echo date('Y-m-d H:i:s', $value['PartnerWork1Tb']['created']); ?></td>
-			<td><a href="/kensyu/cakephp/less/less1?thread_id=<?php echo $value['PartnerWork1Tb']['id']; ?>">
+			<td><a href="/kensyu/cakephp/less/less1?thread_id=<?php echo $value['PartnerWork1Tb']['id']; ?>&user_id=<?php echo $get_data['user_id'] ?>">
 					<?php echo $value['PartnerWork1Tb']['thread']; ?></a></td>
 			<td><?php echo $value['UserTb']['name']; ?></td>
 			<td>
-			<?php if($value['UserTb']['id'] == 1){ ?>
+			<?php if($value['UserTb']['id'] == $get_data['user_id']){ ?>
 				<form action="/kensyu/cakephp/thread/delete_thread" method="POST">
-					<input type="hidden" name="user_id" value="1">
+					<input type="hidden" name="user_id" value="<?php echo $get_data['user_id'];  ?>">
 					<input type="hidden" name="delete_id" value="<?php echo $value['PartnerWork1Tb']['id']; ?>">
 					<input type="submit" value="削除" >
 				</form>

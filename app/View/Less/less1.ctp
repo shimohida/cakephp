@@ -7,8 +7,8 @@
 
 
 <form action="/kensyu/cakephp/less/less2" method="GET">
-<input type="hidden" name="user_id" value="<?php if(isset($user_id)){ echo $user_id; } ?>">
-<input type="hidden" name="thread_id" value="<?php if(isset($thread_id)){ echo $thread_id; } ?> ?>" >
+<input type="hidden" name="user_id" value="<?php if(isset($user_id)){ echo $user_id; }?>">
+<input type="hidden" name="thread_id" value="<?php if(isset($thread_id)){ echo $thread_id;}?>" >
 <input type="submit" value="レスを作成"><br><br>
 </form>
 
@@ -20,8 +20,8 @@
 		<div style="float: left;"><?php echo date("Y-m-d H:i:s" , $risult2['PartnerWork2Tb']['created'] );?> : <?php echo $risult2['UserTb']['name']; ?> </div>
 
 		 <div style="float: right;">
-		 	<form action="/kensyu/cakephp/less/delete_less?thread_id=<?php  echo $thread_id; ?>&user_id=<?php echo $user_id; ?>" method="POST">
-					<input type="hidden" name="delete_less" value="<?php echo  $risult2['PartnerWork2Tb']['id']; ?>">
+		 	<form action="/kensyu/cakephp/less/delete_less?thread_id=<?php echo $thread_id; ?>&user_id=<?php echo $user_id; ?>" method="POST">
+					<input type="hidden" name="delete_less" value="<?php echo  $risult2['PartnerWork2Tb']['id'];?>">
 					<input type="submit" value="削除">
 			</form>
 		 </div>

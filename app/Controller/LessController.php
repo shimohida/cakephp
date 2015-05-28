@@ -16,9 +16,11 @@
 			$req = $this->request->data;   //post
 			$req1 = $this->request->query; //get
 
-			//post されたデータをview で使えるように変数に set する
-			$this->set('user_id', 2);     //$req[""]
-			$this->set('thread_id', $req1['thread_id']);   //$req[""]
+			//送られたデータをview で使えるように変数に set する
+			$this->set('user_id', 1);
+			$this->set('thread_id', $req1['thread_id']);
+
+			$this->set('get_data', $req1);
 
 
 			//今回 PartnerWork1Tb に検索をかけてみる
@@ -71,9 +73,23 @@
 
 			//DELETE
 			if(isset($req['delete_less'])){
-				$this->PartnerWork2Tb->delete($req['delete_less']);  // （）の中にはＩＤを入れる
 
-				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id']) ));
+				//PartnerWork2Tb を検索
+				$where = array('conditions' => array('PartnerWork2Tb.id =' => $req['delete_less'] ));
+				$less =$this->PartnerWork2Tb->find('all', $where);
+
+				if($less[0]['PartnerWork2Tb']['user_tb_id'] != $req1['user_id']){
+
+					//不一致のとき
+					$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id'], 'keka' => 2) ));
+				}else{
+					//削除する
+					$this->PartnerWork2Tb->delete($req['delete_less']);  // （）の中にはＩＤを入れる
+					$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id'], 'keka' => 3)));
+				}
+
+			}else {
+				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id'], 'keka' => 1)));
 			}
 
 		}//レスの削除関係 終了

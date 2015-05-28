@@ -5,6 +5,23 @@
 
 ------------------------------------------------------------------------------------<br><br>
 
+<?php if(isset($get_data['keka'])){
+		if ($get_data['keka'] == 1){ ?>
+
+		<h2>エラーが発生しました</h2>
+
+	<?php	}else if($get_data['keka'] == 2){ ?>
+
+		<h2>「UserID」が違うため削除できません！</h2>
+
+	<?php	}else if($get_data['keka'] == 3){ ?>
+
+		<h2>レスは削除されました</h2>
+
+	<?php } ?>
+
+<?php } //isset ?>
+
 
 <form action="/kensyu/cakephp/less/less2" method="GET">
 <input type="hidden" name="user_id" value="<?php if(isset($user_id)){ echo $user_id; }?>">

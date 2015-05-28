@@ -7,6 +7,9 @@ class ThreadController extends AppController {
 
     public function thread1() {
 
+    	$req1 = $this->request->query; //get
+    	$this->set('delete', $req1);
+
     	// スレッド表示のための、データベース検索
     	$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));
     	$this->set('db_data', $datas);
@@ -23,33 +26,30 @@ class ThreadController extends AppController {
         if($this->request->data['title'] != '' && $this->request->data['detail'] != ''){
             $this->PartnerWork1Tb->create();
             $this->PartnerWork1Tb->save(array('user_tb_id' => 1,'thread' => $this->request->data['title'], 'detail' => $this->request->data['detail']));
+            $this->redirect("/thread/thread1");
         }
-        else
+
         $this->redirect("/thread/thread1");
     }
 
 
-    public function delete_user(){
+    public function delete_thread(){
 
     	//削除関係
     	$req = $this->request->data;   //post
 
         if(isset($req)){
 
-        	if($req['user_name'] != "" && $req['delete_id'] != ""){
+        	if($req['user_id'] != "" && $req['delete_id'] != ""){
 
-        		//送られてきた値で２か所に検索をかける
-        		//UserTb を検索」
-        		$where = array('conditions' => array('UserTb.name =' => 'shimohida' ));
-                $user =$this->UserTb->find('all' , $where);
-
-                //PartnerWork1Tb を検索
+        		//送られてきた値でPartnerWork1Tbを検索する
                 $where = array('conditions' => array('PartnerWork1Tb.id =' => $req['delete_id'] ));
                 $thread =$this->PartnerWork1Tb->find('all' , $where);
 
 
         		//結果により分岐させる
-        		if($user[0]['UserTb']['id'] != $thread[0]['PartnerWork1Tb']['user_tb_id']){
+        		if($req['user_id'] != $thread[0]['PartnerWork1Tb']['user_tb_id']){
+
         			//スレッドのIDとuser が不一致
         			$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('delete' => 2) ));
         		}else{

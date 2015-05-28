@@ -7,7 +7,7 @@ class LoginController extends AppController {
     public function login(){
     	session_start();
 
-    	if(isset($_SESSION['login_id']) && $_SESSION['login_id'] === 1){
+    	if(!isset($_GET['mode']) && isset($_SESSION['login_id']) && $_SESSION['login_id'] === 1){
     		$this->redirect(array('controller' =>'thread','action'=>'thread1'));
     	}
 
@@ -17,12 +17,6 @@ class LoginController extends AppController {
 
     	// post
     	$login = $this->request->data;
-
-//     	if(isset($login['name'])){
-// 	    	echo '<pre>';
-// 	    	echo $this->Session->id();
-// 	    	echo '</pre>';
-//     	}
 
     	if(isset($login['name']) && isset($login['pass'])){
     		//送られてきた値で検索をかける

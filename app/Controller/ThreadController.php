@@ -18,18 +18,30 @@ class ThreadController extends AppController {
 
 
     public function thread2() {
+
+    	//送られたれたデータを受け取る
+    	$req1 = $this->request->query; //get
+    	$this->set('get_data', $req1);
     }
 
 
     public function run_regist(){
+
+    	//送られたれたデータを受け取る
+    	$req = $this->request->data;   //post
+    	$req1 = $this->request->query; //get
+
         // INSERT
-        if($this->request->data['title'] != '' && $this->request->data['detail'] != ''){
+        if($req['title'] != '' && $req['detail'] != ''){
             $this->PartnerWork1Tb->create();
-            $this->PartnerWork1Tb->save(array('user_tb_id' => 1,'thread' => $this->request->data['title'], 'detail' => $this->request->data['detail']));
-            $this->redirect("/thread/thread1");
+            $this->PartnerWork1Tb->save(array('user_tb_id' => $req1['user_id'] ,'thread' => $req['title'], 'detail' => $req['detail']));
+
+            $this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req1['user_id']) ));
+        }else{
+
+        	$this->redirect("/thread/thread1");
         }
 
-        $this->redirect("/thread/thread1");
     }
 
 

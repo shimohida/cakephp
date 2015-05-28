@@ -16,7 +16,7 @@
 
 <?php } //isset ?>
 
-	<button onclick="location.href='thread2'">新規スレッド</button>
+	<button onclick="location.href='thread2?user_id=<?php echo $get_data['user_id'] ?>'">新規スレッド</button>
 
 	<div style="float: right;">
 	<button onclick="location.href='thread2?session=logout'">ログアウト</button>

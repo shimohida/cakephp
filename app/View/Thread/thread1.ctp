@@ -16,10 +16,10 @@
 
 <?php } //isset ?>
 
-	<button onclick="location.href='thread2?user_id=<?php echo $get_data['user_id'] ?>'">新規スレッド</button>
+	<button onclick="location.href='thread2'">新規スレッド</button>
 
 	<div style="float: right;">
-	<button onclick="location.href='thread2?session=logout'">ログアウト</button>
+	<button onclick="location.href='/kensyu/cakephp/login/login?mode=logout'">ログアウト</button>
 	</div>
 	<br/>
 	<br/>
@@ -33,13 +33,12 @@
 	<?php foreach ($db_data as $key => $value):  ?>
 		<tr>
 			<td><?php echo date('Y-m-d H:i:s', $value['PartnerWork1Tb']['created']); ?></td>
-			<td><a href="/kensyu/cakephp/less/less1?thread_id=<?php echo $value['PartnerWork1Tb']['id']; ?>&user_id=<?php echo $get_data['user_id'] ?>">
+			<td><a href="/kensyu/cakephp/less/less1?thread_id=<?php echo $value['PartnerWork1Tb']['id']; ?>&user_id=<?php echo $user_id; ?>">
 					<?php echo $value['PartnerWork1Tb']['thread']; ?></a></td>
 			<td><?php echo $value['UserTb']['name']; ?></td>
 			<td>
-			<?php if($value['UserTb']['id'] == $get_data['user_id']){ ?>
+			<?php if($value['UserTb']['id'] == $user_id){ ?>
 				<form action="/kensyu/cakephp/thread/delete_thread" method="POST">
-					<input type="hidden" name="user_id" value="<?php echo $get_data['user_id'];  ?>">
 					<input type="hidden" name="delete_id" value="<?php echo $value['PartnerWork1Tb']['id']; ?>">
 					<input type="submit" value="削除" >
 				</form>

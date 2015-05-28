@@ -7,8 +7,16 @@ class ThreadController extends AppController {
 
     public function thread1() {
 
-    	$req1 = $this->request->query; //get
-    	$this->set('get_data', $req1);
+    	session_start();
+
+    	//$_SESSION['user_id'] に値があるかの確認
+    	if(isset($_SESSION['login_id'])){
+    		$session_get = $_SESSION['login_id'];
+    	}else{
+    		$this->redirect(array('controller' =>'login','action'=>'login'));
+    	}
+
+    	$this->set('user_id', $session_get);
 
     	// スレッド表示のための、データベース検索
     	$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));
@@ -18,6 +26,17 @@ class ThreadController extends AppController {
 
 
     public function thread2() {
+
+    	session_start();
+
+    	//$_SESSION['user_id'] に値があるかの確認
+    	if(isset($_SESSION['login_id'])){
+    		$session_get = $_SESSION['login_id'];
+    	}else{
+    		$this->redirect(array('controller' =>'login','action'=>'login'));
+    	}
+
+    	$this->set('user_id', $session_get);
 
     	//送られたれたデータを受け取る
     	$req1 = $this->request->query; //get
@@ -50,13 +69,12 @@ class ThreadController extends AppController {
     	//削除関係
     	$req = $this->request->data;   //post
 
-        if(isset($req)){
+        if(isset($req) && ($req['user_id'] != "" && $req['delete_id'] != "")){
 
-        	if($req['user_id'] != "" && $req['delete_id'] != ""){
 
-        		//送られてきた値でPartnerWork1Tbを検索する
-                $where = array('conditions' => array('PartnerWork1Tb.id =' => $req['delete_id'] ));
-                $thread =$this->PartnerWork1Tb->find('all' , $where);
+				//送られてきた値でPartnerWork1Tbを検索する
+				$where = array('conditions' => array('PartnerWork1Tb.id =' => $req['delete_id'] ));
+				$thread =$this->PartnerWork1Tb->find('first' , $where);
 
 
         		//結果により分岐させる
@@ -70,9 +88,6 @@ class ThreadController extends AppController {
         			$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req['user_id'] ,'delete' => 3) ));
         		}
 
-        	}else {
-        		$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req['user_id'] ,'delete' => 1) ));
-        	}
 
         }else{
         	$this->redirect(array('controller' =>'thread','action'=>'thread1', '?' => array('user_id' => $req['user_id'] ,'delete' => 1) ));

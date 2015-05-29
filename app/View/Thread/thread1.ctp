@@ -16,10 +16,6 @@
 
 <?php } //isset ?>
 
-	<pre><?php var_dump($user_id); echo $user_id ?></pre>
-
-
-
 	<button onclick="location.href='thread2'">新規スレッド</button>
 
 	<div style="float: right;">

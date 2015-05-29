@@ -18,6 +18,10 @@ class ThreadController extends AppController {
 
     	$this->set('user_id', $session_get);
 
+    	//USERの name を検索
+    	$user = $this->UserTb->find('first', array('condition' => array('UserTb.id' => $session_get)));
+    	$this->set('user_name', $user);
+
     	// スレッド表示のための、データベース検索
     	$datas = $this->PartnerWork1Tb->find('all', array('order' => array('PartnerWork1Tb.id' => 'desc')));
     	$this->set('db_data', $datas);

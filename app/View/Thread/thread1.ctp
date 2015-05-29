@@ -16,6 +16,8 @@
 
 <?php } //isset ?>
 
+<pre>User_ID:<?php echo $user_id;  ?> / User_name：<?php echo $user_name['UserTb']['name'] ?></pre>
+
 	<button onclick="location.href='thread2'">新規スレッド</button>
 
 	<div style="float: right;">

@@ -12,12 +12,23 @@
 		//レス の表示関係
 		public function less1(){
 
+			session_start();
+
+			//$_SESSION['user_id'] に値があるかの確認
+			if(isset($_SESSION['login_id'])){
+				$session_get = $_SESSION['login_id'];
+			}else{
+				$this->redirect(array('controller' =>'login','action'=>'login'));
+			}
+
+			$this->set('user_id', $session_get);
+
 			//送られたれたデータを受け取る
 			$req = $this->request->data;   //post
 			$req1 = $this->request->query; //get
 
 			//送られたデータをview で使えるように変数に set する
-			$this->set('user_id', $req1['user_id']);
+			$this->set('user_id', $session_get);
 			$this->set('thread_id', $req1['thread_id']);
 
 			$this->set('get_data2', $req1);
@@ -47,17 +58,26 @@
 
 		public function less2(){
 
-			$req1 = $this->request->query; //get
+			session_start();
 
-			$this->set('user_id', $req1['user_id']);
+			//$_SESSION['user_id'] に値があるかの確認
+			if(isset($_SESSION['login_id'])){
+				$session_get = $_SESSION['login_id'];
+			}else{
+				$this->redirect(array('controller' =>'login','action'=>'login'));
+			}
+
+			$this->set('user_id', $session_get);
+
+			$req1 = $this->request->query; //get
 			$this->set('thread_id',  $req1['thread_id']);
 
 			//INSERT
 			if(isset($req1['less']) && $req1['less'] != ""){
 				$this->PartnerWork2Tb->create();
-				$this->PartnerWork2Tb->save(array('user_tb_id' => $req1['user_id'] , 'partner_work1_tb_id' => $req1['thread_id'] ,'less' => $req1['less'] , 'created' => time(), 'updated' => time()));
+				$this->PartnerWork2Tb->save(array('user_tb_id' => $session_get , 'partner_work1_tb_id' => $req1['thread_id'] ,'less' => $req1['less'] , 'created' => time(), 'updated' => time()));
 
-				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id']) ));
+				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id']) ));
 			}
 
 
@@ -68,6 +88,18 @@
 		//レスの削除関係
 		public function delete_less(){
 
+			session_start();
+
+			//$_SESSION['user_id'] に値があるかの確認
+			if(isset($_SESSION['login_id'])){
+				$session_get = $_SESSION['login_id'];
+			}else{
+				$this->redirect(array('controller' =>'login','action'=>'login'));
+			}
+
+			$this->set('user_id', $session_get);
+
+
 			$req = $this->request->data;   //post
 			$req1 = $this->request->query; //get
 
@@ -76,20 +108,20 @@
 
 				//PartnerWork2Tb を検索
 				$where = array('conditions' => array('PartnerWork2Tb.id =' => $req['delete_less'] ));
-				$less =$this->PartnerWork2Tb->find('all', $where);
+				$less =$this->PartnerWork2Tb->find('first', $where);
 
-				if($less[0]['PartnerWork2Tb']['user_tb_id'] != $req1['user_id']){
+				if($less['PartnerWork2Tb']['user_tb_id'] != $session_get){
 
 					//不一致のとき
-					$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id'], 'keka' => 2) ));
+					$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'keka' => 2) ));
 				}else{
 					//削除する
 					$this->PartnerWork2Tb->delete($req['delete_less']);  // （）の中にはＩＤを入れる
-					$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id'], 'keka' => 3)));
+					$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'keka' => 3)));
 				}
 
 			}else {
-				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'user_id' =>  $req1['user_id'], 'keka' => 1)));
+				$this->redirect(array('controller' =>'less','action'=>'less1', '?' => array('thread_id' => $req1['thread_id'] , 'keka' => 1)));
 			}
 
 		}//レスの削除関係 終了

@@ -31,7 +31,7 @@
 
 <?php   foreach($db_order as $risult2){    ?>
 
-<div style=" height:100px; border: 1px solid;">
+<div style=" height:100px; border: 1px solid; overflow: auto;">
 
 	<div  style=" height:30px;">
 		<div style="float: left;"><?php echo date("Y-m-d H:i:s" , $risult2['PartnerWork2Tb']['created'] );?> : <?php echo $risult2['UserTb']['name']; ?> </div>

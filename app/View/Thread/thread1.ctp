@@ -16,6 +16,10 @@
 
 <?php } //isset ?>
 
+	<pre><?php var_dump($user_id); echo $user_id ?></pre>
+
+
+
 	<button onclick="location.href='thread2'">新規スレッド</button>
 
 	<div style="float: right;">
@@ -23,6 +27,9 @@
 	</div>
 	<br/>
 	<br/>
+
+
+
 <table>
 <tr>
 	<th>日付</th>
@@ -37,7 +44,7 @@
 					<?php echo $value['PartnerWork1Tb']['thread']; ?></a></td>
 			<td><?php echo $value['UserTb']['name']; ?></td>
 			<td>
-			<?php if($value['UserTb']['id'] == $user_id){ ?>
+			<?php if($value['PartnerWork1Tb']['user_tb_id'] == $user_id){ ?>
 				<form action="/kensyu/cakephp/thread/delete_thread" method="POST">
 					<input type="hidden" name="delete_id" value="<?php echo $value['PartnerWork1Tb']['id']; ?>">
 					<input type="submit" value="削除" >
